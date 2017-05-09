@@ -7,7 +7,7 @@ import * as path from 'path';
 export class DuplicateIdValidator implements IValidator {
 
   private duplicateSlides: any;
-  private basePath = '../../src/content/';
+  private basePath = path.resolve(__dirname, '../../../src/content/');
   
   get duplicates() {
     return this.duplicateSlides;
