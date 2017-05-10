@@ -9,6 +9,7 @@
     "build": "npm run clean && webpack",
     "start": "webpack-dev-server",
     "test": "cd testing && tsc index.ts --outdir dist -t es6 -m commonjs && cd dist && node index.js",
+    "test": "node testing/test.js",
     "predeploy": "npm run build",
     "deploy": "bash deploy.sh"
   },
